@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мамалак / ПлюшКрафт — Фабрика плюшевых игрушек премиум-класса</title>
+  <title>Мамалак — Фабрика плюшевых игрушек премиум-класса</title>
   <meta name="description" content="Швейное производство плюшевых игрушек и корпоративных маскотов от 100 шт. Образец за 72 часа, сертификаты ГОСТ.">
   
   <!-- Google Fonts: Unbounded & Plus Jakarta Sans & JetBrains Mono -->
@@ -114,7 +114,7 @@
       background: #831843;
     }
 
-    /* Prevent any horizontal overflow on mobile */
+    /* Prevent any horizontal overflow on mobile & desktop */
     body {
       overflow-x: hidden;
       width: 100%;
@@ -130,54 +130,54 @@
 
   <!-- NOISE OVERLAY -->
   <div class="pointer-events-none fixed inset-0 z-50 opacity-[0.015]"
-       style="background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZUZpbHRlciI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuODUiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpZGVzPSJzdGl0Y2giLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjbm9pc2VGaWx0ZXIpIi8+PC9zdmc+');"></div>
+       style="background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZUZpbHRlciI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuODUiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpZGVzPSJzdGl0Y2giLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjbm9pc2VUZXh0dXJlKSIvPjwvc3ZnPg==');"></div>
 
-  <!-- HEADER -->
+  <!-- HEADER (ZERO-BUG RESPONSIVE LAYOUT) -->
   <header class="sticky top-0 z-40 w-full border-b border-pinkbrand-100 bg-white/95 dark:border-pinkbrand-900/30 dark:bg-neutral-950/95">
-    <div class="mx-auto flex h-20 sm:h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
       
-      <!-- LOGO -->
-      <a href="#" class="flex flex-shrink-0 items-center gap-3 sm:gap-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pinkbrand-400 rounded-2xl">
-        <div class="relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl bg-gradient-to-tr from-pinkbrand-500 to-pinkbrand-400 text-white shadow-md shadow-pinkbrand-400/20 ring-4 ring-pinkbrand-100 dark:ring-pinkbrand-900/40">
-          <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current" viewBox="0 0 24 24">
+      <!-- LOGO (FLEX-SHRINK-0) -->
+      <a href="#" class="flex flex-shrink-0 items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pinkbrand-400 rounded-2xl">
+        <div class="relative flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-pinkbrand-500 to-pinkbrand-400 text-white shadow-md shadow-pinkbrand-400/20 ring-2 ring-pinkbrand-100 dark:ring-pinkbrand-900/40">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 24 24">
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9c.83 0 1.5-.67 1.5-1.5S7.83 8 7 8s-1.5.67-1.5 1.5S6.17 11 7 11zm10 0c.83 0 1.5-.67 1.5-1.5S17.83 8 17 8s-1.5.67-1.5 1.5S16.17 11 17 11zm-5 4c-1.93 0-3.68-.79-4.95-2.05l1.41-1.41C9.42 12.5 10.63 13 12 13s2.58-.5 3.54-1.46l1.41 1.41C15.68 14.21 13.93 15 12 15z"/>
           </svg>
         </div>
-        <div class="flex flex-col">
-          <span class="font-heading font-extrabold text-xl sm:text-2xl tracking-tight text-neutral-900 dark:text-white">Мамалак</span>
-          <span class="font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest text-pinkbrand-500">Фабрика Игрушек • ГОСТ 25779</span>
+        <div class="flex flex-col flex-shrink-0">
+          <span class="font-heading font-extrabold text-lg sm:text-xl tracking-tight text-neutral-900 dark:text-white leading-tight">Мамалак</span>
+          <span class="font-mono text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-pinkbrand-500">Фабрика Игрушек • ГОСТ 25779</span>
         </div>
       </a>
 
-      <!-- DESKTOP NAV -->
-      <nav class="hidden lg:flex items-center gap-2 xl:gap-4 font-heading font-semibold text-base">
-        <a href="#calculator" class="rounded-xl px-4 py-2.5 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all">Калькулятор</a>
-        <a href="#showcase" class="rounded-xl px-4 py-2.5 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all">Игрушки</a>
-        <a href="#process" class="rounded-xl px-4 py-2.5 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all">Производство</a>
-        <a href="#pricing" class="rounded-xl px-4 py-2.5 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all">Тиражи</a>
-        <a href="#faq" class="rounded-xl px-4 py-2.5 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all">FAQ</a>
+      <!-- DESKTOP NAV (BALANCED SPACING & COMPACT FONT) -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2 font-heading font-semibold text-xs xl:text-sm">
+        <a href="#calculator" class="rounded-xl px-2.5 py-2 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all whitespace-nowrap">Калькулятор</a>
+        <a href="#showcase" class="rounded-xl px-2.5 py-2 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all whitespace-nowrap">Игрушки</a>
+        <a href="#process" class="rounded-xl px-2.5 py-2 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all whitespace-nowrap">Производство</a>
+        <a href="#pricing" class="rounded-xl px-2.5 py-2 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all whitespace-nowrap">Тиражи</a>
+        <a href="#faq" class="rounded-xl px-2.5 py-2 text-neutral-700 hover:text-pinkbrand-500 hover:bg-pinkbrand-50 dark:text-neutral-300 dark:hover:bg-pinkbrand-900/20 transition-all whitespace-nowrap">FAQ</a>
       </nav>
 
-      <!-- CONTACTS WITH NEW PHONE NUMBER -->
-      <div class="hidden sm:flex items-center gap-5 flex-shrink-0">
+      <!-- RIGHT CONTACTS & CTA (STRICT FLEX-SHRINK-0 WHITESPACE-NOWRAP) -->
+      <div class="hidden sm:flex items-center gap-3 xl:gap-5 flex-shrink-0">
         <a href="tel:+996708060898" 
-           class="font-mono text-base sm:text-lg font-bold tracking-tight tabular-nums whitespace-nowrap text-neutral-900 dark:text-neutral-100 hover:text-pinkbrand-500 transition-colors">
+           class="hidden md:inline-block font-mono text-xs xl:text-sm font-bold tracking-tight tabular-nums whitespace-nowrap flex-shrink-0 text-neutral-900 dark:text-neutral-100 hover:text-pinkbrand-500 transition-colors">
           +996 (708) 06-08-98
         </a>
         <a href="#order-form" 
-           class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-gradient-to-r from-pinkbrand-400 to-pinkbrand-500 px-6 sm:px-7 py-3 sm:py-3.5 font-heading font-bold text-sm sm:text-base text-white shadow-md shadow-pinkbrand-400/20 transition-all duration-200 hover:scale-105 active:scale-95">
+           class="inline-flex items-center justify-center whitespace-nowrap flex-shrink-0 rounded-full bg-gradient-to-r from-pinkbrand-400 to-pinkbrand-500 px-4 xl:px-6 py-2.5 xl:py-3 font-heading font-bold text-xs xl:text-sm text-white shadow-md shadow-pinkbrand-400/20 transition-all duration-200 hover:scale-105 active:scale-95">
           Заказать образец
         </a>
       </div>
 
-      <!-- MOBILE TRIGGER (MIN 44x44 TOUCH TARGET) -->
+      <!-- MOBILE MENU TRIGGER -->
       <button type="button" 
               id="mobile-menu-trigger"
               aria-expanded="false" 
               aria-controls="mobile-menu"
               aria-label="Открыть меню"
-              class="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-2xl border border-pinkbrand-200 bg-pinkbrand-50 text-neutral-900 lg:hidden dark:border-pinkbrand-900/40 dark:bg-neutral-900 dark:text-white">
-        <svg class="h-6 w-6 sm:h-7 sm:w-7 stroke-[2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              class="flex h-11 w-11 items-center justify-center rounded-2xl border border-pinkbrand-200 bg-pinkbrand-50 text-neutral-900 lg:hidden flex-shrink-0 dark:border-pinkbrand-900/40 dark:bg-neutral-900 dark:text-white">
+        <svg class="h-6 w-6 stroke-[2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
@@ -666,7 +666,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
         <div>
-          <div class="font-heading font-bold text-white text-lg sm:text-xl">Мамалак / ПлюшКрафт</div>
+          <div class="font-heading font-bold text-white text-lg sm:text-xl">Мамалак</div>
           <p class="text-xs text-neutral-500 mt-1">© 2026 ООО «Мамалак». Все права защищены.</p>
         </div>
         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 font-bold">
